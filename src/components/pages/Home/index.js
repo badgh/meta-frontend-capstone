@@ -1,7 +1,7 @@
-import Hero from './Hero';
-import WeekSpecials from './WeekSpecials';
-import Testimonials from './Testimonials';
-import OurStory from './OurStory';
+import Hero from "./Hero";
+import WeekSpecials from "./WeekSpecials";
+import Testimonials from "./Testimonials";
+import About from "./About";
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
       <Hero />
       <WeekSpecials />
       <Testimonials />
-      <OurStory />
+      <About />
     </>
   );
 };
