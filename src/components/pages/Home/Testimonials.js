@@ -1,38 +1,24 @@
 import customer1Image from "./assets/happy-client1.jpg";
 import customer2Image from "./assets/happy-client2.jpg";
 import customer3Image from "./assets/happy-client3.png";
-import customer4Image from "./assets/happy-client3.png";
 import "./Testimonials.css";
 import TestimonialCard from "./TestimonialCard";
 
 const customers = [
   {
-    fullName: "Maria Sanchez",
+    name: "Andre Perez",
     image: customer1Image,
-    rating: [1, 1, 1, 1, 0.5],
-    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    quote: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sapiente magnam sunt iste, pariatur ea fugit sed. Quidem, ea esse!`,
   },
   {
-    fullName: "Antony Clifton",
+    name: "Hanna Brown",
     image: customer2Image,
-    rating: [1, 1, 1, 1, 1],
-    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    quote: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sapiente magnam sunt iste, pariatur ea fugit sed. Quidem, ea esse!`,
   },
   {
-    fullName: "Tamika Jackson",
+    name: "Jasmine Wright",
     image: customer3Image,
-    rating: [1, 1, 1, 1, 0.5],
-    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-  },
-  {
-    fullName: "Brandon Ming",
-    image: customer4Image,
-    rating: [1, 1, 1, 1],
-    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    quote: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sapiente magnam sunt iste, pariatur ea fugit sed. Quidem, ea esse!`,
   },
 ];
 
@@ -40,7 +26,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials">
       <div className="container grid">
-        <h2>What people say about us!</h2>
+        <h2>Testimonials!</h2>
         {customers.map((customer, index) => (
           <TestimonialCard key={index} customer={customer} />
         ))}
